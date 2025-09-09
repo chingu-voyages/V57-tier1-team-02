@@ -6,12 +6,12 @@ A web application that tracks the current PR's waiting review as well as PR comp
 
 ## Features
 
-- [] Landing page
-- [] Ability to display a list of all open PR's
-- [] Ability to display a list of all closed PR's
-- [] An AI chat agent to answer all related questons
-- [] Ability to save the information returned as a JSON file
-- [] Ability to display error message for invalid inputs
+- [ ] Landing page
+- [ ] Ability to display a list of all open PR's
+- [ ] Ability to display a list of all closed PR's
+- [ ] An AI chat agent to answer all related questons
+- [ ] Ability to save the information returned as a JSON file
+- [ ] Ability to display error message for invalid inputs
 
 ## Running the project
 
@@ -21,9 +21,9 @@ Live Version:
 From the repository
 
 1.  clone the repository
-2.  cd ```review-board
-3.  Run ```npm install
-4.  Run ``npm run dev
+2.  cd `review-board`
+3.  Run `npm install`
+4.  Run `npm run dev`
 
 ## Our Team
 
