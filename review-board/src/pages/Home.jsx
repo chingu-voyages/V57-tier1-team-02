@@ -7,8 +7,8 @@ import { CheckCircle2 } from "lucide-react";
 export default function Home() {
   return (
     <div>
-      <div className="flex items-center justify-between p-8">
-        <div className="max-w m-md">
+      <div className="flex items-center justify-between p-8 w-[60%] mx-auto">
+        <div className="max-w m-md ">
           <h2 className="text-2xl font-bold mb-4">
             Easily organize your teams work
           </h2>
@@ -17,8 +17,12 @@ export default function Home() {
             dolore!
           </p>
           <div className="flex gap-4">
-            <Button className="bg-gray-800">Open PRs</Button>
-            <Button className="bg-gray-800">Closed PR</Button>
+            <Button to="/openpr" className="bg-gray-800">
+              Open PRs
+            </Button>
+            <Button to="/closepr" className="bg-gray-800">
+              Closed PR
+            </Button>
           </div>
         </div>
         <div>

@@ -18,15 +18,17 @@ function Footer() {
           <a href="/contact" className="text-sm text-gray-700 hover:underline">
             Contact
           </a>
-          <a href="/privacy" className="text-sm text-gray-700 hover:underline">
-            Privacy Policy
+          <a
+            href="https://github.com/chingu-voyages/V57-tier1-team-02"
+            target="_blank"
+            className="text-sm text-gray-700 hover:underline"
+          >
+            Github
           </a>
         </div>
 
         {/* Copyright */}
-        <p className="text-sm text-gray-700">
-          © {year} MyApp. All rights reserved.
-        </p>
+        <p className="text-sm text-gray-700">© {year} Saleh | Anas</p>
       </div>
     </footer>
   );
