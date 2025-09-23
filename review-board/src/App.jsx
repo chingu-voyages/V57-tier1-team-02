@@ -1,3 +1,25 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ClosePR from "./pages/ClosePR";
+import OpenPR from "./pages/OpenPR";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { Routes, Route } from "react-router-dom";
+
 export default function App() {
-  return <h1>Hello, From the main file</h1>;
+  return (
+    <div className="app">
+      <div className="content">
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/openpr" element={<OpenPR />} />
+          <Route path="/closepr" element={<ClosePR />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
+  );
 }

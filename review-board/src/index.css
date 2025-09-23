@@ -1,3 +1,5 @@
-h1 {
-  text-align: center;
+@import "tailwindcss";
+
+.logo {
+  width: 50px;
 }

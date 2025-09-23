@@ -27,7 +27,7 @@ From the repository
 
 ## Our Team
 
-- Teammate name #1: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Anas EL ASSRI #1: [GitHub](https://github.com/anaselass) / [LinkedIn](www.linkedin.com/in/anas-el-assri-852920279)
 - Saleh Abdullahi #2: [GitHub](https://github.com/serleh) / [LinkedIn](https://www.linkedin.com/in/saleh-abdullahi/)
 
   ...
