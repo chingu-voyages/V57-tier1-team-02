@@ -8,17 +8,21 @@ import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="app">
-      <div className="content">
-        <Header />
+    <div className="flex flex-col min-h-screen">
+      {/* Header */}
+      <Header />
 
+      {/* Main content */}
+      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/openpr" element={<OpenPR />} />
           <Route path="/closepr" element={<ClosePR />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </div>
+      </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

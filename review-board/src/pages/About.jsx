@@ -1,6 +1,8 @@
 import React from "react";
 
 import pholder from "../assets/pholder.png";
+import team from "../assets/team-collaboration.webp";
+import teamcode from "../assets/team-code.jpg";
 
 export default function About() {
   return (
@@ -12,7 +14,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white shadow-lg rounded-2xl p-6 text-left hover:shadow-xl transition-shadow duration-300">
               <img
-                src={pholder}
+                src={team}
                 alt="team"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
@@ -32,7 +34,7 @@ export default function About() {
 
             <div className="bg-white shadow-lg rounded-2xl p-6 text-left hover:shadow-xl transition-shadow duration-300">
               <img
-                src={pholder}
+                src={teamcode}
                 alt="mission"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />

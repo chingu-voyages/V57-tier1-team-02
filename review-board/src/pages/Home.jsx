@@ -5,6 +5,11 @@ import pulr from "../assets/pulr.webp";
 import pholder from "../assets/pholder.png";
 import { CheckCircle2 } from "lucide-react";
 import About from "./About";
+import teamcode from "../assets/team-code.jpg";
+import pull from "../assets/pull.png";
+import anas from "../assets/anas.png";
+import saleh from "../assets/saleh.jpg";
+
 export default function Home() {
   return (
     <div>
@@ -47,12 +52,12 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 gap-4">
             <img
-              src={pholder}
+              src={teamcode}
               alt="Preview 1"
               className="w-full h-40 object-contain rounded-lg shadow-md col-span-2"
             />
             <img
-              src={pholder}
+              src={pull}
               alt="Preview 2"
               className="w-full h-40 object-cover rounded-lg shadow-md"
             />
@@ -79,7 +84,48 @@ export default function Home() {
       </section>
       <section className="py-16 bg-white">
         <div className="text-center mb-12">
-          <About />
+          <div className="max-w-6xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-10">About Us</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white shadow-lg rounded-2xl p-6 text-left hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src={anas}
+                  alt="team member"
+                  className="w-full h-48 object-contain rounded-lg mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2">Anas EL ASSRI</h3>
+                <p className="text-gray-600 mb-4">
+                  A web developer who loves building clean, user-friendly
+                  interfaces and learning new technologies.
+                </p>
+                <a
+                  href="#"
+                  className="text-blue-600 font-medium hover:underline"
+                >
+                  Learn more
+                </a>
+              </div>
+
+              <div className="bg-white shadow-lg rounded-2xl p-6 text-left hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src={saleh}
+                  alt="Team member"
+                  className="w-full h-48 object-contain rounded-lg mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2">Saleh Abdullahi</h3>
+                <p className="text-gray-600 mb-4">
+                  A dedicated coder with a profound love for problem-solving
+                </p>
+                <a
+                  href="#"
+                  className="text-blue-600 font-medium hover:underline"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
