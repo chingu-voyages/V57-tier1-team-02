@@ -12,18 +12,24 @@ const formattedDate = today.toLocaleDateString("en-US", {
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-4 bg-gray-300">
-      <div className="flex items-center space-x-2">
-        <img src={logo} alt="" width="50px" className="logo" />
+    <header className="flex flex-col md:flex-row items-center justify-between px-6 py-4 bg-white shadow-md border-b border-gray-200 rounded-b-2xl">
+      {/* Logo */}
+      <div className="flex items-center gap-3 mb-2 md:mb-0">
+        <img src={logo} alt="Logo" width="50" className="rounded-full shadow-inner" />
+        <span className="text-lg font-semibold text-gray-800">OpenPR Viewer</span>
       </div>
-      <nav className="flex space-x-4">
-        <Button to="/">Home</Button>
-        <Button to="/openpr">OpenPR</Button>
-        <Button to="/closepr">ClosePR</Button>
-        <Button to="about">About</Button>
+
+      {/* Navigation */}
+      <nav className="flex flex-wrap justify-center gap-3">
+        <Button to="/" className="bg-blue-600 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg font-medium">Home</Button>
+        <Button to="/openpr" className="bg-blue-600 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg font-medium">OpenPR</Button>
+        <Button to="/closepr" className="bg-blue-600 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg font-medium">ClosePR</Button>
+        <Button to="/about" className="bg-blue-600 text-white hover:bg-blue-700 transition px-4 py-2 rounded-lg font-medium">About</Button>
       </nav>
-      <div className="text-sm font-medium">
-        <span className="font-bold">Today: </span>
+
+      {/* Date */}
+      <div className="mt-2 md:mt-0 text-sm text-gray-600 font-medium">
+        <span className="font-semibold">Today: </span>
         {formattedDate}
       </div>
     </header>
